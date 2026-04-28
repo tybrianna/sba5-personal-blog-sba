@@ -15,34 +15,16 @@
         <h1>My Personal Blog</h1>
     </header>
 
-    <section id="blog">
-        <h2>Blog Posts</h2>
-        <article class="post">
-            <h3>My First Blog Post</h3>
-            <p>This is the content of my first blog post. I'm excited to share more in the future!</p>
-            <span class="error-message" id="usernameError"></span>
+    <form id="postForm">
+        <input type="text" id="title" placeholder="Enter post title" />
+        <textarea id="content" placeholder="Write your post..." rows="5"></textarea>
 
-        </article>
-        <article class="post">
-            <h3>My First Blog Post</h3>
-            <p>This is the content of my first blog post. I'm excited to share more in the future!</p>
-            <span class="error-message" id="emailError"></span>
-        </article>
-        <article class="post">
-            <h3>My First Blog Post</h3>
-            <p>This is the content of my first blog post. I'm excited to share more in the future!</p>
-            <span class="error-message" id="passwordError"></span>
+        <button type="submit">Submit Post</button>
 
-        </article>
-        <article class="post"> 
-            <h3>My First Blog Post</h3>
-            <p>This is the content of my first blog post. I'm excited to share more in the future!</p>
-            <span class="error-message" id="Please enter text in the box"></span>
+        <p id="formError" class="error-message"></p>
+    </form>
 
-        </article>
-
-    </section>
+    <section id="postsContainer"></section>
 
 </body>
-
 </html>
